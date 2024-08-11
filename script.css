@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .profile-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-container {
+        padding: 10px;
+    }
+}
+
+.btn-group-toggle .btn {
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    height: 300px; /* Adjust based on the height of your content */
+}
+
+.content-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.content-item:not(.d-none) {
+    display: block;
+}

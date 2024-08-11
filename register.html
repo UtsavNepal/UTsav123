@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>Submitted Details</h2>
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Password:</strong> <span id="displayPassword"></span></p>
+                <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+        const message = localStorage.getItem('message');
+
+        // Display the data
+        document.getElementById('displayEmail').innerText = email;
+        document.getElementById('displayPassword').innerText = password;
+        document.getElementById('displayMessage').innerText = message;
+    </script>
+
+</body>
+</html>

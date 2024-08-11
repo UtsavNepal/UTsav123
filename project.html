@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="project.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/88dacb5ee5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <header class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-brand" href="#">UN.Deja vu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <a style="color: white;"><i class="fa-solid fa-bars"></i>Menu</a>
+              </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#abouts">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                                             
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cont">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+   
+
+    <section class="myself d-flex align-items-center">
+        <div class="container text-center text-lg-left">
+            <div class="row align-items-center">
+                <div class="col col-lg-6">
+                    <div class="badge badge-primary mb-2">Hi There!</div>
+                    <h1 class="display-4">I am Utsav Nepal</h1>
+                    
+                    <p class="mb-4" style="font-size:40px ;">I'm the best in the business.</p>
+                    <a href="#" class="btn btn-outline-light">Hire Me</a>
+                    <a href="#" class="btn btn-outline-light">View Details</a>
+                    <p class="mt-4">
+                        <a href="#" class="text-white mx-2">+ FACEBOOK</a>
+                        <a href="#" class="text-white mx-2">+ TWITTER</a>
+                        <a href="#" class="text-white mx-2">+ LINKEDIN</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img src="Images/imgR.png" class="img-fluid" style="width: 900px; height:800px; ">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+ 
+
+
+
+
+
+
+
+
+
+    <section class="about py-5" id="abouts">
+      <div class="container" style="font-size: 20px;text-align: justify;">
+        <div class="row">
+          <div class="col-lg-5 w-40">
+            <img src="Images/im.jpg" alt="About Image" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="about-me" autocomplete="off" checked/>
+                About Me
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="skills" autocomplete="off" />Skills
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="experience" autocomplete="off"/>
+                Experience
+              </label>
+            </div>
+
+            <div class="content position-relative">
+              <div id="about-me-content" class="content-item">
+                <h2>About Me</h2>
+                <p>
+                  Hello! My name is Utsav Nepal. I was born and raised in
+                  Hetauda city of Nepal. I experienced the warmth and support of
+                  a small-town environment. This sense of community has shaped
+                  my values and taught me the importance of building strong
+                  relationships.
+                  <br>
+                  In my free time, I enjoy traveling. I am passionate about playing football and watching it.
+                </p>
+              </div>
+              <div id="skills-content" class="content-item d-none">
+                <h2>Skills</h2>
+                <ul>
+                  <li>Web Development</li>
+                  <li>Mobile App Development</li>
+                  <li>Front-End</li>
+                </ul>
+              </div>
+              <div id="experience-content" class="content-item d-none">
+                <h2>Experience</h2>
+                <p>2014-2015: Art & Creative Director at Google Inc.</p>
+                <p>2015-2017: Wordpress Developer at Google Inc.</p>
+                <p>2018-2020: UI/UX Designer at Google Inc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+
+
+    
+    <section class="contact py-4">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <button data-toggle="modal" data-target="#contactModal" class="btn btn-primary" style="border-radius: 10%;">From here</button>
+      </div>
+    </section>
+    
+    
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>We'll help you in every way possible!</p>
+            
+            <form id="contactForm">
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="message">Enter message:</label>
+                  <textarea class="form-control" id="message" name="message" style="height: 100px;" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+            
+            </div>
+            <p class="signup-link text-center mt-3">Don't have an account? <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AdF4I75RiIEOC6fqLn8250MLWMrZGNnkrP52OItpABrYmQIQ1Ivkle5poNoXaTBFlUZchwEhsqVfCw&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+               style="text-decoration: none; color: black; text-shadow: 1px 1px green;">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Registered');
+        $('#contactModal').modal('hide');
+        window.location.href = 'project.html'; 
+      });
+
+
+  
+    </script>
+
+
+
+
+
+
+
+
+    <div class="row mt-4" style="margin-left: 15.2%; margin-right: 15.2%;text-align: justify;">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-brain" style="font-size: 48px" ></i>
+            <h4 class="card-title">UI & UX Design</h4>
+            <p class="card-text">
+                The process of designing user interfaces and experiences to ensure they are intuitive for users
+           creating a engaging interaction between the user and the product.
+            </p>
+            <a href="https://bootcamp.cvn.columbia.edu/blog/what-is-ux-design/" target="_blank" class="btn btn-primary">Read more </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa fa-user-secret" style="font-size: 48px"></i>
+            <h4 class="card-title">Web Development</h4>
+            <p class="card-text">
+                The building and maintenance of websites, involving coding, creating web content, and configuring server settings to ensure functionality and performance.
+            </p>
+            <a href="https://brainstation.io/career-guides/what-is-web-development" target="_blank" class="btn btn-primary">Read more </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <i class="fa-solid fa-scroll-torah" style="font-size: 48px"></i>
+            <h4 class="card-title">Graphic Design</h4>
+            <p class="card-text">
+                The art and practice of creating visual content to communicate messages through typography, imagery, color, and layout.
+            </p>
+            <a href="https://webflow.com/blog/what-is-graphic-design" target="_blank" class="btn btn-primary">Read more </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="mt-5" id="happy" >
+        <div class="row g-6">
+            <div class="col-md-4">
+                
+                <div class="p-4 stat-card">
+                  <h2 class="stat-number"> <i class="fa-regular fa-face-smile" style="font-size: 30px;"></i>5,000</h2>
+                    
+                    <p class="stat-description">Happy Customers</p>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                
+                <div class="p-4 stat-card">
+                    <h2 class="stat-number" ><i class="fa-solid fa-file-circle-check" style="font-size: 30px; color: rgb(199, 157, 157);"></i>2000</h2>
+                    <p class="stat-description">Projects Completed</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                
+                <div class="p-4 stat-card">
+                    <h2 class="stat-number" ><i class="fa-solid fa-mug-saucer" style="font-size: 30px; color: rgb(219, 205, 187);"></i>3,000</h2>
+                    <p class="stat-description">Cups of Coffee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer bg-light text-dark py-4">
+      <div class="container" style="text-align: justify;margin-left: 15.2%;">
+        <div class="row">
+          <div class="col-md-4">
+            <h5><b>UN.Delay</b></h5>
+            <p>
+                In 2008, Nepal abolished its monarchy, declaring itself a federal democratic republic. The subsequent years were marked by political struggles to draft a new constitution, which was finally adopted in 2015.
+            </p>
+           
+          </div>
+          <div class="col-md-4" style="margin-left: 80px;">
+            <h5> <b>Services</b></h5>
+            <ul class="list-unstyled">
+              <li><a href="https://webtechnepal.com/" target="_blank">Web Design</a></li>
+              <li><a href="https://webtechnepal.com/" target="_blank">Web Development</a></li>
+              <li>
+                <a href="https://www.coursera.org/articles/what-does-a-graphic-designer-do" target="_blank" >Graphic Design</a>
+              </li>
+              <li>
+                <a href="https://www.figma.com/resource-library/difference-between-ui-and-ux/" target="_blank">UI/UX Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3" id="cont">
+            <h5><b>Have a Question?</h5></b></h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-map-marker"></i> 12 Hetauda, Makwanpur District,
+                Nepal
+              </li>
+              <li>
+                <i class="fa fa-phone"></i
+                ><a href="tel:+9779821818139" target="_blank"> +977 9812345670</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:utsavnepal21@gmail.com" target="_blank">utsavnepal021@gmail.com</a>
+             
+              </li>
+            </ul>
+            <div class="social-icons d-flex justify-content-center mb-3" style="font-size: 48px;">
+              <a href="https://www.facebook.com/utsav.simpleguy" target="_blank" style="color: rgb(65, 36, 36);"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/mr.utsavnepal__/" target="_blank" style="color: rgb(65, 36, 36);"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter" style="color: rgb(65, 36, 36)"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>
+            &copy; 2024 All rights reserved
+             by Utsav
+          </p>
+        </div>
+        
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    
+   
+    <script>
+        $(document).ready(function () {
+          $('input[type="radio"]').on("change", function () {
+            $(".content-item").addClass("d-none");
+            if ($("#about-me").is(":checked")) {
+              $("#about-me-content").removeClass("d-none");
+            } else if ($("#skills").is(":checked")) {
+              $("#skills-content").removeClass("d-none");
+            } else if ($("#experience").is(":checked")) {
+              $("#experience-content").removeClass("d-none");
+            }
+          });
+        });
+      </script>
+    
+  </body>
+</html>
